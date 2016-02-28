@@ -6,8 +6,8 @@
 //  Copyright © 2016年 taffy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SHBaseViewController.h"
 
-@interface SHHomeViewController : UIViewController
+@interface SHHomeViewController : SHBaseViewController
 
 @end
