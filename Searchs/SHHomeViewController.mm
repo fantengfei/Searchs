@@ -8,6 +8,7 @@
 
 #import "SHHomeViewController.h"
 #import <ComponentKit/ComponentKit.h>
+#import "SHRequest.h"
 
 @implementation SHHomeViewController
 
@@ -15,6 +16,15 @@
   [super viewDidLoad];
   
   self.title = @"Searchs";
+  
+  
+  [SHRequest getHomeData:^(id model) {
+    
+  } failure:^(NSString *message) {
+    
+  }];
+
 }
+
 
 @end
