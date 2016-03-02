@@ -1,3 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+workspace 'Searchs'
+
 pod 'ComponentKit', '~> 0.14'
 pod 'SDWebImage', '~> 3.7.5'
 pod 'AFNetworking', '~> 3.0.4'

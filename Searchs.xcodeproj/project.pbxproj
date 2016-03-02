@@ -11,7 +11,7 @@
 		04B6A46B1C79E7FD00BAB5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A46A1C79E7FD00BAB5CD /* main.m */; };
 		04B6A46E1C79E7FD00BAB5CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A46D1C79E7FD00BAB5CD /* AppDelegate.m */; };
 		04B6A4761C79E7FD00BAB5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B6A4751C79E7FD00BAB5CD /* Assets.xcassets */; };
-		04B6A4851C7AC83000BAB5CD /* SHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A4841C7AC83000BAB5CD /* SHHomeViewController.m */; };
+		04B6A4851C7AC83000BAB5CD /* SHHomeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A4841C7AC83000BAB5CD /* SHHomeViewController.mm */; };
 		98452CB422D07C47E6BF5F50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AB66306B8351E8A76A5D45 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		04B6A4751C79E7FD00BAB5CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B6A47A1C79E7FD00BAB5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B6A4831C7AC83000BAB5CD /* SHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHomeViewController.h; sourceTree = "<group>"; };
-		04B6A4841C7AC83000BAB5CD /* SHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeViewController.m; sourceTree = "<group>"; };
+		04B6A4841C7AC83000BAB5CD /* SHHomeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHHomeViewController.mm; sourceTree = "<group>"; };
 		64A9ED34EAAF5C872BD2F54B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		94AB66306B8351E8A76A5D45 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8E834F377D2AC6E080A602 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				040C61A91C82FBBF00A97406 /* SHBaseViewController.h */,
 				040C61AA1C82FBBF00A97406 /* SHBaseViewController.m */,
 				04B6A4831C7AC83000BAB5CD /* SHHomeViewController.h */,
-				04B6A4841C7AC83000BAB5CD /* SHHomeViewController.m */,
+				04B6A4841C7AC83000BAB5CD /* SHHomeViewController.mm */,
 			);
 			name = Feature;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 				04B6A46E1C79E7FD00BAB5CD /* AppDelegate.m in Sources */,
 				04B6A46B1C79E7FD00BAB5CD /* main.m in Sources */,
 				040C61AB1C82FBBF00A97406 /* SHBaseViewController.m in Sources */,
-				04B6A4851C7AC83000BAB5CD /* SHHomeViewController.m in Sources */,
+				04B6A4851C7AC83000BAB5CD /* SHHomeViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "SHHomeViewController.h"
+#import <ComponentKit/ComponentKit.h>
 
 @implementation SHHomeViewController
 
