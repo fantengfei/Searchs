@@ -14,18 +14,12 @@ NSURLSessionConfiguration *_configuration() {
   return [NSURLSessionConfiguration defaultSessionConfiguration];
 }
 
-+ (void) getRequestWithURL:(NSString *)url
-                parameters:(NSDictionary *)parameters
-                   success:(RequestSuccessBlock)success
-                   failure:(RequestFailureBlock)failure {
-
-  AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-  manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-  [manager GET:url parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-    success(responseObject, task);
-  } failure:^(NSURLSessionTask *operation, NSError *error) {
-    failure(error);
-  }];
+NSString *_getURL(NSString *relativeString) {
+  if (relativeString == nil) relativeString = @"";
+  NSString *url = [NSString stringWithFormat:@"%@%@", TARGET_IPHONE_SIMULATOR ? LOCALHOST : HOST, relativeString];
+  NSLog(@"%@", url);
+  return url;
 }
+
 
 @end

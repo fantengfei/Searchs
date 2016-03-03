@@ -6,11 +6,5 @@
 //  Copyright © 2016年 taffy. All rights reserved.
 //
 
-#ifndef ServerConfig_h
-#define ServerConfig_h
-
+#define LOCALHOST @"http://127.0.0.1:5000"
 #define HOST @"http://searchs.applinzi.com"
-
-
-
-#endif /* ServerConfig_h */

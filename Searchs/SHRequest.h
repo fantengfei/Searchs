@@ -13,6 +13,6 @@ typedef void(^FailureBlock) (NSString *message);
 
 @interface SHRequest : SHBaseRequest
 
-+ (void) getHomeData: (SuccessBlock) success failure: (FailureBlock) failure;
++ (void) getHomeData: (void(^)(NSArray *, NSArray *)) success failure: (FailureBlock) failure;
 
 @end

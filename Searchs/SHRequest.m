@@ -6,20 +6,22 @@
 //  Copyright © 2016年 taffy. All rights reserved.
 //
 
+#import "SHBaseRequest+Protected.h"
 #import "SHRequest.h"
+#import "CategoryModel.h"
+#import "BannerModel.h"
 
 @implementation SHRequest
 
 
-+ (void) getHomeData:(SuccessBlock)success failure:(FailureBlock)failure {
-  [self.class getRequestWithURL:HOST
-                     parameters:nil
++ (void) getHomeData:(void(^)(NSArray *, NSArray *))success failure:(FailureBlock)failure {
+  [self.class getRequestWithURL:nil parameters:nil
                         success:^(id response, NSURLSessionTask *sessionTask) {
-                          NSLog(@"%@", response);
-                          NSLog(@"%@", sessionTask);
+                          NSDictionary *dic = (NSDictionary *)response;
+                          success([CategoryModel listWithDictionary:dic],[BannerModel listWithDictionary:dic]);
                         }
                         failure:^(NSError *error) {
-                          NSLog(@"%@", error);
+                          failure([error.userInfo objectForKey:@"NSLocalizedDescription"]);
                         }];
 }
 @end

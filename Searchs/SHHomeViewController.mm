@@ -10,20 +10,24 @@
 #import <ComponentKit/ComponentKit.h>
 #import "SHRequest.h"
 
+@interface SHHomeViewController()
+
+@property (nonatomic) NSArray *items;
+@property (nonatomic) NSArray *banners;
+
+@end
+
 @implementation SHHomeViewController
 
 - (void) viewDidLoad {
   [super viewDidLoad];
-  
-  self.title = @"Searchs";
-  
-  
-  [SHRequest getHomeData:^(id model) {
-    
-  } failure:^(NSString *message) {
-    
-  }];
 
+  [SHRequest getHomeData:^(NSArray *banners, NSArray *items) {
+    self.items = [NSArray arrayWithArray:items];
+    self.banners = [NSArray arrayWithArray:banners];
+  } failure:^(NSString *message) {
+    NSLog(@"%@", message);
+  }];
 }
 
 

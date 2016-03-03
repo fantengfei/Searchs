@@ -18,5 +18,6 @@
 #import "SDWebImage/UIButton+WebCache.h"
 #import "Masonry.h"
 #import "libextobjc/EXTScope.h"
+#import "UIView+SAAdditions.h"
 
 #endif /* PrefixHeader_pch */

@@ -22,11 +22,10 @@ typedef NS_ENUM(NSInteger , SHRequestMethod) {
 typedef void(^RequestFailureBlock)(NSError *error);
 typedef void(^RequestSuccessBlock)(id response, NSURLSessionTask *sessionTask);
 
-@interface SHBaseRequest : NSObject
+@interface SHBaseRequest: NSObject
 
-+ (void) getRequestWithURL: (NSString *)url
-                parameters: (NSDictionary *)parameters
-                   success: (RequestSuccessBlock) success
-                   failure: (RequestFailureBlock) failure;
+NSURLSessionConfiguration *_configuration();
+NSString *_getURL(NSString *relativeString);
+
 
 @end
