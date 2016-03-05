@@ -8,7 +8,7 @@
 
 #import "UINavigationBar+Height.h"
 
-static CGFloat kNavigationBarHeight = 128;
+static CGFloat kNavigationBarHeight = 64;
 
 @implementation UINavigationBar (Height)
 

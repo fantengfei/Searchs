@@ -9,11 +9,13 @@
 #import "SHHomeViewController.h"
 #import <ComponentKit/ComponentKit.h>
 #import "SHRequest.h"
+#import "SHItemsScrollView.h"
 
 @interface SHHomeViewController()
 
 @property (nonatomic) NSArray *items;
 @property (nonatomic) NSArray *banners;
+@property (nonatomic) SHItemsScrollView *itemsView;
 
 @end
 
@@ -21,10 +23,19 @@
 
 - (void) viewDidLoad {
   [super viewDidLoad];
-
-  [SHRequest getHomeData:^(NSArray *banners, NSArray *items) {
+  
+  [SHRequest getHomeData:^(NSArray *items, NSArray *banners) {
     self.items = [NSArray arrayWithArray:items];
     self.banners = [NSArray arrayWithArray:banners];
+  
+    [self.view addSubview:
+     [SHItemsScrollView
+      newWithPoint:CGPointMake(0, 64)
+      items:self.items tapItemCallback:^(CategoryModel *) {
+      
+        // TODO:
+        
+      }]];
   } failure:^(NSString *message) {
     NSLog(@"%@", message);
   }];

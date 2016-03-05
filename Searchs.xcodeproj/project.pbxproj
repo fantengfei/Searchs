@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040C61AB1C82FBBF00A97406 /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C61AA1C82FBBF00A97406 /* SHBaseViewController.m */; };
 		043354F11C88919400E90DDF /* UINavigationBar+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 043354F01C88919400E90DDF /* UINavigationBar+Height.m */; };
+		048577DF1C89C8640047C486 /* SHItemsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048577DE1C89C8640047C486 /* SHItemsScrollView.m */; };
 		04B6A46B1C79E7FD00BAB5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A46A1C79E7FD00BAB5CD /* main.m */; };
 		04B6A46E1C79E7FD00BAB5CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6A46D1C79E7FD00BAB5CD /* AppDelegate.m */; };
 		04B6A4761C79E7FD00BAB5CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B6A4751C79E7FD00BAB5CD /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 		040C61AF1C82FF7600A97406 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		043354EF1C88919400E90DDF /* UINavigationBar+Height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Height.h"; sourceTree = "<group>"; };
 		043354F01C88919400E90DDF /* UINavigationBar+Height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Height.m"; sourceTree = "<group>"; };
+		048577DD1C89C8640047C486 /* SHItemsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHItemsScrollView.h; sourceTree = "<group>"; };
+		048577DE1C89C8640047C486 /* SHItemsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHItemsScrollView.m; sourceTree = "<group>"; };
 		04B6A4661C79E7FD00BAB5CD /* Searchs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Searchs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B6A46A1C79E7FD00BAB5CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04B6A46C1C79E7FD00BAB5CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 		04D3C3821C888F3E009DE56F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				048577DD1C89C8640047C486 /* SHItemsScrollView.h */,
+				048577DE1C89C8640047C486 /* SHItemsScrollView.m */,
 			);
 			name = Module;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048577DF1C89C8640047C486 /* SHItemsScrollView.m in Sources */,
 				04C3204A1C872DE300940D8A /* SHRequest.m in Sources */,
 				04D3C3771C888193009DE56F /* CategoryModel.m in Sources */,
 				04B6A46E1C79E7FD00BAB5CD /* AppDelegate.m in Sources */,
